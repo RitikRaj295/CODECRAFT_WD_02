@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="englilsh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <title>StopWatch</title>
+</head>
+<body>
+    <div class="container">
+        <div class="timerDisplay">
+            00:00:00
+        </div>
+        <div class="buttons">
+            <button id="resetBtn" style="background-color: rgb(42, 61, 228);">Reset</button>
+            <button id="stopBtn" style="background-color: rgb(232, 74, 12);">Stop</button>
+            <button id="startBtn" style="background-color: rgb(12, 188, 24);">Start</button>
+        </div>
+        <div class="lapBtns">
+            <button id="lapBtn">Lap</button>
+            <button onclick="toggleBtn()" id="lapListBtn"> <i class="fa-solid fa-arrow-right-long"></i></i></button>
+        </div>
+   
+       
+    </div>
+    <div class="lap">
+        <h3>Lap List</h3>
+        <ul id="lapList">
+  
+        </ul>
+    </div>
+
+    
+    <script src="./script.js"></script>
+</body>
+</html>
